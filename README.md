@@ -1,6 +1,8 @@
 # Biblioteca Web
 
 Aplicação do laboratório de Engenharia de Software para cadastrar Autores e Livros.
+Repositório público: [AndreLuizrc/biblioteca-web](https://github.com/AndreLuizrc/biblioteca-web).
+Revisão do DEV 1: [PR #1](https://github.com/AndreLuizrc/biblioteca-web/pull/1).
 Nesta etapa, `feature/autores` implementa a parte do DEV 1: API e interface de Autores,
 testes e configuração compartilhada. Livros e o teste de vínculo Autor–Livro são a próxima
 etapa do DEV 2. A `main` preserva a base inicial até a revisão do colega.
@@ -142,16 +144,16 @@ vinculados a um autor, removê-los antes de excluir o autor: a FK deverá proteg
 
 ## Publicação e revisão
 
-Após criar um repositório GitHub vazio, configure o remoto e envie ambas as branches:
+O repositório remoto já foi criado e as duas branches foram enviadas. O PR #1 está
+aberto para revisão do DEV 2; o merge não foi executado. Para enviar novos commits
+da branch atual:
 
 ```powershell
-git remote add origin URL_REAL_DO_REPOSITORIO
-git push -u origin main
-git push -u origin feature/autores
+git push origin feature/autores
 ```
 
-Abra PR de `feature/autores` para `main`, usando o [texto preparado](docs/pr-autores.md).
-DEV 2 revisa e faz o merge. Depois atualiza sua `main` e cria `feature/livros` para
+O PR de `feature/autores` para `main` usa o [texto preparado](docs/pr-autores.md).
+DEV 2 revisa, comenta e faz o merge. Depois atualiza sua `main` e cria `feature/livros` para
 implementar sua parte; se já criou a branch na base inicial, deve incorporar a `main`.
 Após Livros, DEV 1 revisa e integra o segundo PR. Registrar os links reais e coletar
 os prints previstos na spec. O projeto completo ainda depende dessa etapa.

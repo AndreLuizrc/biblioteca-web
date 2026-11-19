@@ -2,6 +2,10 @@
 
 Atualizado em 19/11/2026. Branch de trabalho: `feature/autores`.
 
+Publicado em [AndreLuizrc/biblioteca-web](https://github.com/AndreLuizrc/biblioteca-web),
+com `main` e `feature/autores`. O [PR #1](https://github.com/AndreLuizrc/biblioteca-web/pull/1)
+está aberto, aguardando revisão e merge do DEV 2.
+
 ## Implementado
 
 - Repositório Git local, base inicial em `main`, `.gitignore` e commits por etapa.
@@ -61,8 +65,7 @@ e do Actions dependem das etapas seguintes.
 
 ## Pendências para a entrega completa
 
-- Criar/configurar o repositório remoto e enviar `main` e `feature/autores`.
-- Abrir o PR de Autores para `main`; DEV 2 precisa revisar, comentar e fazer o merge.
+- DEV 2 precisa revisar, comentar e fazer o merge do PR #1 de Autores para `main`.
 - DEV 2 cria/atualiza `feature/livros` a partir da base integrada e implementa sua funcionalidade.
 - DEV 2 cria `IntegracaoTest.deveVincularLivroAAutor`, sem substituir o teste por mocks.
 - Revisar e integrar o PR de Livros com comentário do DEV 1.
