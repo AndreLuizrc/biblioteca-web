@@ -1,0 +1,15 @@
+**/target/
+**/node_modules/
+frontend/build/
+.tools/
+.cache/
+tmp/
+*.log
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+*.iml
+Thumbs.db
+.DS_Store
