@@ -13,8 +13,18 @@ export const autorService = {
   deletar: (id) => api.delete(`/autores/${id}`),
 };
 
-export function mensagemErro(erro) {
-  if (erro.response?.status === 404) return 'Autor não encontrado. Volte à lista e tente novamente.';
+export const livroService = {
+  listar: () => api.get('/livros'),
+  buscar: (id) => api.get(`/livros/${id}`),
+  criar: (livro) => api.post('/livros', livro),
+  atualizar: (id, livro) => api.put(`/livros/${id}`, livro),
+  deletar: (id) => api.delete(`/livros/${id}`),
+};
+
+export function mensagemErro(erro, recurso = 'Autor') {
+  if (erro.response?.status === 404) return recurso === 'Livro'
+    ? 'Livro ou autor não encontrado. Atualize a página e confira o autor selecionado.'
+    : 'Autor não encontrado. Volte à lista e tente novamente.';
   if (erro.response?.status === 400) return 'Confira os campos informados e tente novamente.';
   if (erro.response?.status === 409) return 'Este autor possui livros vinculados. Exclua os livros primeiro.';
   return 'Não foi possível concluir a operação. Confira a conexão com a API e tente novamente.';
