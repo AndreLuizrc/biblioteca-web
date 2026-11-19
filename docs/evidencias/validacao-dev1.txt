@@ -1,0 +1,31 @@
+Validacao local do DEV 1 - 19/11/2026
+Branch: feature/autores
+Transcricao de trechos de logs reais; este arquivo nao e um screenshot.
+
+BACKEND - Maven Wrapper 3.9.9 / Java 17 - package
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.774 s -- in com.biblioteca.AutorPersistenciaTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.323 s -- in com.biblioteca.controller.AutorControllerTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0
+[INFO] BUILD SUCCESS
+[INFO] Total time:  16.762 s
+[INFO] Finished at: 2026-11-19T08:32:49-03:00
+
+FRONTEND - Node 20.19.0 / npm 10.8.2 - npm ci
+added 1295 packages in 4m
+
+FRONTEND - npm test -- --watchAll=false --passWithNoTests --runInBand
+Test Suites: 1 passed, 1 total
+Tests:       4 passed, 4 total
+Snapshots:   0 total
+Time:        1.503 s, estimated 2 s
+Ran all test suites.
+
+FRONTEND - npm run build
+Compiled successfully.
+The build folder is ready to be deployed.
+
+NAVEGADOR - Edge headless / API Spring Boot real / H2 temporario
+PASS: criacao, listagem ordenada, edicao, limpeza de opcionais, exclusao e 404 no navegador.
+PASS: viewport desktop e mobile; nenhum erro JavaScript.
+Evidencias: docs/evidencias/03-autores-lista.png e 04-autores-formulario.png.
+Ambiente: API real Spring Boot/Java 17 com H2 temporario; frontend build de producao/React 18.
