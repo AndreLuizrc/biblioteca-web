@@ -2,7 +2,8 @@
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--paper); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 15px; line-height: 1.6; }
 a { color: var(--green); }
-button, input { font: inherit; }
+button, input, select { font: inherit; }
+nav { display: flex; gap: 16px; }
 button, a { -webkit-tap-highlight-color: transparent; }
 button { cursor: pointer; }
 button:disabled { opacity: .55; cursor: wait; }
@@ -55,7 +56,7 @@ td { padding: 22px 28px; border-top: 1px solid #edf0e9; font-size: 14px; }
 .form-fields { border: 0; padding: 32px 28px 38px; margin: 0; min-width: 0; }
 .field { display: flex; flex-direction: column; gap: 8px; }
 .field label { font-weight: 600; font-size: 13px; }
-.field input { background: #fff; color: var(--ink); width: 100%; height: 47px; border: 1px solid #cdd4cb; border-radius: 5px; padding: 10px 13px; min-width: 0; }
+.field input, .field select { background: #fff; color: var(--ink); width: 100%; height: 47px; border: 1px solid #cdd4cb; border-radius: 5px; padding: 10px 13px; min-width: 0; }
 .field input::placeholder { color: #939d94; }
 .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 26px; }
 .form-footer { border-top: 1px solid var(--line); background: #fcfdfb; padding: 21px 28px; display: flex; gap: 12px; justify-content: flex-end; }
