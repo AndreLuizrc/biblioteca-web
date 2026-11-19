@@ -38,6 +38,7 @@ está aberto, aguardando revisão e merge do DEV 2.
 | Navegador | Edge headless, frontend de produção e API real em H2 temporário; CRUD, ordenação, opcionais e 404 passaram |
 | Layout | Lista e formulário conferidos; viewport desktop 1366×900 e lista mobile 390×844 |
 | Compose | `docker compose config --quiet` passou |
+| CI remoto do DEV 1 | [Execução verde do PR #1](https://github.com/AndreLuizrc/biblioteca-web/actions/runs/44516447389), com `test-backend` e `test-frontend` aprovados no commit `9c847df` |
 
 Os dados usados no navegador foram criados apenas para a verificação e removidos ao final.
 As ferramentas baixadas e os caches ficam em `.tools/` e `.cache/`, ignorados pelo Git.
@@ -58,10 +59,11 @@ e [Hibernate 6.4 — UserType](https://docs.hibernate.org/orm/6.4/javadocs/org/h
 - [Lista de Autores](evidencias/03-autores-lista.png).
 - [Formulário de Autores](evidencias/04-autores-formulario.png).
 - [Trechos dos resultados reais de validação](evidencias/validacao-dev1.txt).
+- [Actions verde do DEV 1](evidencias/08-actions-dev1.png), capturado da página pública do GitHub.
 
 O arquivo de texto registra os resultados; não substitui o print do terminal com
-`BUILD SUCCESS` solicitado para a entrega final. Os prints de Livros, do vínculo pela API
-e do Actions dependem das etapas seguintes.
+`BUILD SUCCESS` solicitado para a entrega final. Os prints de Livros e do vínculo pela API
+dependem do DEV 2; o Actions da versão final integrada deve ser coletado depois dos merges.
 
 ## Pendências para a entrega completa
 
@@ -69,7 +71,7 @@ e do Actions dependem das etapas seguintes.
 - DEV 2 cria/atualiza `feature/livros` a partir da base integrada e implementa sua funcionalidade.
 - DEV 2 cria `IntegracaoTest.deveVincularLivroAAutor`, sem substituir o teste por mocks.
 - Revisar e integrar o PR de Livros com comentário do DEV 1.
-- Executar o workflow no GitHub e capturar Actions verde da versão final.
+- Confirmar o workflow e capturar Actions verde da versão final integrada em `main`; o CI do PR de Autores já foi executado com sucesso.
 - Executar containers caso desejado para aceitação extra; o Docker engine estava desligado na validação local.
 - Preencher os nomes da dupla e turma no README e reunir os prints restantes.
 
