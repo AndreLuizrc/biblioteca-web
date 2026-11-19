@@ -1,0 +1,32 @@
+Validacao local DEV 2 - 19/11/2026 - feature/livros
+Trechos transcritos de resultados reais; este arquivo nao e um screenshot.
+
+Backend - Java 17.0.21 / Maven 3.9.9 - mvn -B test
+AutorPersistenciaTest: 1 teste
+AutorControllerTest: 12 testes
+LivroControllerTest: 14 testes
+IntegracaoTest: 2 testes
+Tests run: 29, Failures: 0, Errors: 0, Skipped: 0
+BUILD SUCCESS
+
+Frontend - Node 20.19.0 / react-scripts 5
+test --watchAll=false --passWithNoTests --runInBand
+Test Suites: 2 passed, 2 total
+Tests: 10 passed, 10 total
+
+Frontend - react-scripts build
+Compiled successfully.
+70.71 kB build/static/js/main.ad022e1f.js (gzip)
+1.87 kB build/static/css/main.917e726b.css (gzip)
+
+Edge headless - frontend build de producao / API real Java 17 e H2 temporario
+PASS: sem autores, criacao, nome do autor, edicao, troca de autor,
+limpeza de opcionais, timestamp preservado, exclusao e 404.
+PASS: desktop e mobile; nenhum erro JavaScript.
+Capturas: 05-livros-lista.png, 06-livros-formulario.png.
+Resposta real HTTP 201: api-vinculo-dev2.json.
+Teste isolado nas portas locais 18000 e 18080; encaminhamento HTTP do navegador
+para a API temporaria, sem mocks. Registros de teste removidos ao terminar.
+
+Pendente: screenshots dos testes no terminal e vinculo na ferramenta de API,
+publicacao/PR/revisao do DEV 1 e Actions da main final depois do merge.

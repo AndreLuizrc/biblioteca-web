@@ -1,0 +1,20 @@
+{
+  "metodo": "POST",
+  "endpoint": "/api/livros",
+  "status": 201,
+  "resposta": {
+    "id": 1,
+    "titulo": "Dom Casmurro",
+    "isbn": "978-8535910667",
+    "anoPublicacao": 1899,
+    "genero": "Romance",
+    "autor": {
+      "id": 1,
+      "nome": "Machado de Assis",
+      "nacionalidade": null,
+      "dataNascimento": null,
+      "criadoEm": "2026-11-19T17:18:26.14619"
+    },
+    "criadoEm": "2026-11-19T17:18:26.490066"
+  }
+}
