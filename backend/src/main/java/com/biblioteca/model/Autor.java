@@ -12,6 +12,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
 import lombok.Data;
 
 @Data
@@ -40,6 +41,6 @@ public class Autor {
 
     @PrePersist
     void preencherCriadoEm() {
-        criadoEm = LocalDateTime.now();
+        criadoEm = LocalDateTime.now().truncatedTo(ChronoUnit.MICROS);
     }
 }
