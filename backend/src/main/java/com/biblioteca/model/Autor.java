@@ -1,5 +1,6 @@
 package com.biblioteca.model;
 
+import com.biblioteca.persistence.LocalDateType;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -14,6 +15,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import lombok.Data;
+import org.hibernate.annotations.Type;
 
 @Data
 @Entity
@@ -33,6 +35,7 @@ public class Autor {
     private String nacionalidade;
 
     @Column(name = "data_nascimento")
+    @Type(LocalDateType.class)
     private LocalDate dataNascimento;
 
     @JsonProperty(access = JsonProperty.Access.READ_ONLY)
