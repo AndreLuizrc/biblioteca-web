@@ -22,8 +22,8 @@ testes de controller e integração Autor–Livro. Consulte o
 
 | Integrante | Branch | Responsabilidade |
 | --- | --- | --- |
-| DEV 1 — nome a preencher | `feature/autores` | Autor, repository, controller, testes, lista e formulário; estrutura e configurações compartilhadas |
-| DEV 2 — nome a preencher | `feature/livros` | Livro, repository, controller, testes, lista, formulário com select; `IntegracaoTest` e validação final do CI |
+| DEV 1 — André Luiz Rocha | `feature/autores` | Autor, repository, controller, testes, lista e formulário; estrutura e configurações compartilhadas |
+| DEV 2 — Marcella Santos | `feature/livros` | Livro, repository, controller, testes, lista, formulário com select; `IntegracaoTest` e validação final do CI |
 
 Turma: a preencher. Cada integrante deve revisar, deixar pelo menos um comentário e
 fazer o merge do PR do colega. Não apagar as branches antes da avaliação.
@@ -181,5 +181,5 @@ git push -u origin feature/livros
 O PR de Livros pode usar o [texto preparado](docs/pr-livros.md). DEV 1 deve revisar,
 deixar um comentário e fazer o merge com os checks verdes. O workflow existente já
 executa os novos testes junto dos testes de Autores. Após o merge, ambos atualizam
-sua `main` e coletam a execução verde do Actions da versão final. Preencher os nomes
-da dupla e turma e completar as evidências antes da entrega.
+sua `main` e coletam a execução verde do Actions da versão final. Preencher a turma
+e completar as evidências antes da entrega.
